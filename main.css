@@ -1,0 +1,214 @@
+/*Fonts*/
+@font-face {
+    font-family: 'HankenGroteskVariable';
+    src: url('./assets/fonts/HankenGrotesk-VariableFont_wght.ttf');
+}
+@font-face {
+    font-family: 'HankenGroteskBold';
+    src: url('./assets/fonts/static/HankenGrotesk-Bold.ttf');
+}
+@font-face {
+    font-family: 'HankenGroteskExtraBold';
+    src: url('./assets/fonts/static/HankenGrotesk-ExtraBold.ttf');
+}
+@font-face {
+    font-family: 'HankenGroteskMedium';
+    src: url('./assets/fonts/static/HankenGrotesk-Medium.ttf');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+
+    /*Primary*/
+    --lightRed: hsl(0, 100%, 67%);
+    --orangeyYellow: hsl(39, 100%, 56%);
+    --greenTeal: hsl(166, 100%, 37%);
+    --cobaltBlue: hsl(234, 85%, 45%);
+
+    /*BackGround Primary*/
+    --lightRedBack: hsla(0, 100%, 67%, 0.1);
+    --orangeyYellowBack: hsla(39, 100%, 56%,0.1);
+    --greenTealBack: hsla(166, 100%, 37%, 0.1);
+    --cobaltBlueBack: hsla(234, 85%, 45%, 0.1);
+
+    /*Gradients*/
+    --lightSlateBlueBackground: hsl(252, 100%, 67%);
+    --lightRoyalBlueBackground: hsl(241, 81%, 54%);
+    --violetBlueCircle: hsla(256, 72%, 46%, 1);
+    --persianBlueCircle: hsla(241, 72%, 46%, 0);
+
+    /*Neutral colors*/
+    --white: hsl(0, 0%, 100%);
+    --paleBlue: hsl(221, 100%, 96%);
+    --lightLavender: hsl(241, 100%, 89%);
+    --darkGrayBlue: hsl(224, 30%, 27%);
+}
+
+html{
+    width:1440px; 
+    height:800px;
+    font-family: 'HankenGroteskVariable', monospace;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    min-height:100vh;
+    min-width: 100vw;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--paleBlue);
+    gap:1rem;
+    
+}
+.card{
+    height: 430px;
+    border-radius: 20px;
+    background-color: var(--white);
+    display: flex;
+}
+.leftSide {
+    background-image: linear-gradient(var(--lightSlateBlueBackground),var(--lightRoyalBlueBackground)90%);
+    border-radius: 20px;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap:5px;
+    justify-content: space-evenly;
+    width: 16svw;
+    padding:1rem;
+}
+.leftTitle {
+    color:var(--lightLavender);
+    text-align: center;
+}
+.circleFigure {
+    background-image: linear-gradient(var(--violetBlueCircle), var(--persianBlueCircle));
+    border-radius: 50%;
+    padding:1rem;
+    height: 16.5svh;
+    width: 8.5svw;
+    border: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+.circleNum {
+    color:var(--white);
+    font-family: 'HankenGroteskExtraBold',monospace;
+    font-size: 60px;
+
+}
+.parCircle {
+    color:var(--lightLavender);
+    font-size: 15px;
+    font-family: 'HankenGroteskBold', monospace;
+}
+.resultTitle {
+    
+    color:var(--white);
+    font-weight: 800;
+}
+.resultPar {
+    color:var(--paleBlue);
+    padding: auto;
+    width: 12svw;
+
+}
+.rightSide {
+    padding:1rem 1.6rem;
+    display: inline-flex;
+    flex-direction: column;
+    gap:.5rem;
+    width:16svw;
+    justify-content: space-evenly;
+}
+.rightTitle {
+    color: var(--darkGrayBlue);
+    text-align: start;    
+}
+.listSkills {
+    display: flex;
+    flex-direction: column;
+    gap:1rem;
+    list-style: none;
+}
+
+#reaction{
+    font-weight: 600;
+    color: var(--lightRed);
+    display: flex;
+    justify-content: space-between;
+    padding:.7rem;
+    background-color: var(--lightRedBack);
+    border-radius: 7px;
+}
+
+.reactionResult, .memoryResult, .verbalResult, .visualResult{
+    color: var(--darkGrayBlue);
+    display: flex;
+    font-family: 'HankenGroteskBold', monospace;
+    gap:3px;
+    font-weight: 600;
+}
+#memory{
+    
+    background-color: var(--orangeyYellowBack);
+    color: var(--orangeyYellow);
+    display: flex;
+    justify-content: space-between;
+    padding:.7rem;
+    border-radius: 7px;
+}
+#verbal{
+    font-weight: 600;
+    background-color: var(--greenTealBack);
+    color: var(--greenTeal);
+    display: flex;
+    justify-content: space-between;
+    padding:.7rem;
+    border-radius: 7px;
+}
+
+#visual{
+    font-weight: 600;
+    background-color: var(--cobaltBlueBack);
+    color: var(--cobaltBlue);
+    display: flex;
+    justify-content: space-between;
+    padding:.7rem;
+    border-radius: 7px;
+}
+
+p{
+    color:hsla(224, 30%, 27%, 0.2);
+    display: flex;
+    gap:2px;
+    justify-content: space-around;
+}
+.btnContinue {
+    font-weight: 600;
+    width: auto;
+    padding: .5rem;
+    border-radius: 1.5rem;
+    color:var(--white);
+    background-color: var(--darkGrayBlue);
+    border: none;
+    height: 5svh;
+}
+.btnContinue:hover{
+    background-image: linear-gradient(var(--lightSlateBlueBackground),var(--lightRoyalBlueBackground)90%);
+    cursor: pointer;
+}
+.adjustList{
+    display: flex;
+    justify-content: space-evenly;
+    gap:10px;
+}

@@ -1,47 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+  <link rel="stylesheet" href="./main.css">
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-  
+
   <title>Frontend Mentor | Results summary component</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
   </style>
 </head>
-<body>
 
-  Your Result
-  76
-  of 100
+<body class="main">
+  <main class="card">
 
-  Great
-  You scored higher than 65% of the people who have taken these tests.
-  
-  Summary
+    <aside class="leftSide">
+      <h3 class="leftTitle">Your Result</h3>
+      <figure class="circleFigure">
+        <h2 class="circleNum">76</h2>
+        <span class="parCircle">of 100</span>
+      </figure>
+      <h2 class="resultTitle">Great</h2>
+      <p class="resultPar"> You scored higher than 65% of the people who have taken these tests.</p>
+    </aside>
+    <section class="rightSide">
+      <h3 class="rightTitle">Summary</h3>
+      <ul class="listSkills">
+        <li id="reaction"><div class="adjustList"><img src="./assets/images/icon-reaction.svg" alt="Reaction Icon">
+          Reaction</div>
+          <p> <span class="reactionResult">80 </span>/ 100</p>
+        </li> 
+        <li id="memory"><div class="adjustList"><img src="./assets/images/icon-memory.svg" alt="Memory Action">
+          Memory</div>
+          <p> <span class="memoryResult">92 </span>/ 100</p>
+        </li> 
+        <li id="verbal"><div class="adjustList"><img src="./assets/images/icon-verbal.svg" alt="Verbal Action">
+          Verbal</div>
+          <p> <span class="verbalResult">61 </span>/ 100</p>
+        </li>
+        <li id="visual"><div class="adjustList"> <img src="./assets/images/icon-visual.svg" alt="Visual Action">
+          Visual</div>
+          <p> <span class="visualResult">72 </span>/ 100</p>
+        </li>
+      </ul>
+      <button class="btnContinue">Continue</button>
+    </section>
 
-  Reaction
-  80 / 100
-
-  Memory
-  92 / 100
-
-  Verbal
-  61 / 100
-
-  Visual
-  72 / 100
-
-  Continue
-  
+  </main>
   <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
     Coded by <a href="#">Your Name Here</a>.
   </div>
 </body>
+
 </html>
