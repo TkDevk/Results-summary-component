@@ -7,7 +7,7 @@
   <!-- displays site properly based on user's device -->
   <link rel="stylesheet" href="./main.css">
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-
+  <script src="./script.js"></script>
   <title>Frontend Mentor | Results summary component</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
@@ -29,7 +29,7 @@
     <aside class="leftSide">
       <h3 class="leftTitle">Your Result</h3>
       <figure class="circleFigure">
-        <h2 class="circleNum">76</h2>
+        <h2 id="total" class="circleNum">00</h2>
         <span class="parCircle">of 100</span>
       </figure>
       <h2 class="resultTitle">Great</h2>
@@ -40,22 +40,22 @@
       <ul class="listSkills">
         <li id="reaction"><div class="adjustList"><img src="./assets/images/icon-reaction.svg" alt="Reaction Icon">
           Reaction</div>
-          <p> <span class="reactionResult">80 </span>/ 100</p>
+          <p> <span id="showReaction" class="reactionResult">00 </span>/ 100</p>
         </li> 
         <li id="memory"><div class="adjustList"><img src="./assets/images/icon-memory.svg" alt="Memory Action">
           Memory</div>
-          <p> <span class="memoryResult">92 </span>/ 100</p>
+          <p> <span id="showMemory" class="memoryResult">00 </span>/ 100</p>
         </li> 
         <li id="verbal"><div class="adjustList"><img src="./assets/images/icon-verbal.svg" alt="Verbal Action">
           Verbal</div>
-          <p> <span class="verbalResult">61 </span>/ 100</p>
+          <p> <span id="showVerbal" class="verbalResult">00 </span>/ 100</p>
         </li>
         <li id="visual"><div class="adjustList"> <img src="./assets/images/icon-visual.svg" alt="Visual Action">
           Visual</div>
-          <p> <span class="visualResult">72 </span>/ 100</p>
+          <p> <span id="showVisual" class="visualResult">00 </span>/ 100</p>
         </li>
       </ul>
-      <button class="btnContinue">Continue</button>
+      <button onclick="showResults()" class="btnContinue">Continue</button>
     </section>
 
   </main>
