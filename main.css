@@ -92,8 +92,8 @@ html{
     background-image: linear-gradient(var(--violetBlueCircle), var(--persianBlueCircle));
     border-radius: 50%;
     padding:1.5rem;
-    height: 18svh;
-    width: 9svw;
+    height: 20svh;
+    width: 10svw;
     border: none;
     display: flex;
     flex-direction: column;
