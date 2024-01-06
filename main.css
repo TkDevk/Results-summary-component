@@ -81,7 +81,7 @@ html{
     flex-direction: column;
     gap:5px;
     justify-content: space-evenly;
-    width: 16svw;
+    width: 22svw;
     padding:1rem;
 }
 .leftTitle {
@@ -91,9 +91,9 @@ html{
 .circleFigure {
     background-image: linear-gradient(var(--violetBlueCircle), var(--persianBlueCircle));
     border-radius: 50%;
-    padding:1rem;
-    height: 16.5svh;
-    width: 8.5svw;
+    padding:1.5rem;
+    height: 18svh;
+    width: 9svw;
     border: none;
     display: flex;
     flex-direction: column;
@@ -127,7 +127,7 @@ html{
     display: inline-flex;
     flex-direction: column;
     gap:.5rem;
-    width:16svw;
+    width: 22svw;
     justify-content: space-evenly;
 }
 .rightTitle {
